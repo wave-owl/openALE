@@ -1,0 +1,55 @@
+{
+  "gitlinks": {},
+  "vendored": [
+    {
+      "path": "third_party",
+      "repository": null,
+      "commit": null,
+      "licenses": [
+        "third_party/ed25519/LICENSE"
+      ],
+      "evidence": [
+        "third_party/ed25519/LICENSE",
+        "CMakeLists.txt"
+      ]
+    }
+  ],
+  "models": [],
+  "external_libraries": [
+    {
+      "name": "Conditional source requirements declared by CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by ale_monitor/CMakeLists.txt",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "ale_monitor/CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "Conditional source requirements declared by tools/location-relay-server/package.json",
+      "version": "unresolved; see immutable declaration evidence",
+      "evidence": [
+        "tools/location-relay-server/package.json"
+      ]
+    },
+    {
+      "name": "Hamlib optional",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "CMakeLists.txt"
+      ]
+    },
+    {
+      "name": "FetchContent mbedTLS tag mbedtls-3.6.7",
+      "version": "unresolved; conditional source declaration",
+      "evidence": [
+        "CMakeLists.txt"
+      ]
+    }
+  ]
+}

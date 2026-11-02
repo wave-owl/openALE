@@ -1,0 +1,354 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "cmake:bb46a5a5cddad52cc5069d2b3a1b328eb49ffa3b178abf5e9e92f00e68f6089a",
+      "name": "mbedtls",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "FetchContent_Declare"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "mbedtls GIT_REPOSITORY https://github.com/Mbed-TLS/mbedtls.git GIT_TAG mbedtls-3.6.7 GIT_SHALLOW TRUE GIT_SUBMODULES_RECURSE TRUE"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "cmake:c09a73bf4eb0aef8ac767034bfef0cc31fefe72eae8141b911f7605f00aff54f",
+      "name": "PkgConfig",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-requirement"
+        },
+        {
+          "name": "sbom:cmake-source",
+          "value": "CMakeLists.txt"
+        },
+        {
+          "name": "sbom:cmake-command",
+          "value": "find_package"
+        },
+        {
+          "name": "sbom:cmake-declaration",
+          "value": "PkgConfig QUIET"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:0",
+      "name": "Conditional source requirements declared by CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"CMakeLists.txt\", \"sha256\": \"dabfc170819993eafdda1fd8b9191989a6fae14449d2bbdbebb49553f4c8072d\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:1",
+      "name": "Conditional source requirements declared by ale_monitor/CMakeLists.txt",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"ale_monitor/CMakeLists.txt\", \"sha256\": \"3295e6860b72ece8553cd329d1730e178082bcfa2ad73b1a1550f65df8f3b6b9\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:2",
+      "name": "Conditional source requirements declared by tools/location-relay-server/package.json",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; see immutable declaration evidence"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"tools/location-relay-server/package.json\", \"sha256\": \"1d1686c88f94703734d910d285e5632311ebf5fb1faf6201bb2a70220f9b5a76\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:3",
+      "name": "Hamlib optional",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"CMakeLists.txt\", \"sha256\": \"dabfc170819993eafdda1fd8b9191989a6fae14449d2bbdbebb49553f4c8072d\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "external-library:4",
+      "name": "FetchContent mbedTLS tag mbedtls-3.6.7",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "conditional-build-runtime-requirement"
+        },
+        {
+          "name": "sbom:resolution",
+          "value": "conditional; unresolved version"
+        },
+        {
+          "name": "sbom:declared-version",
+          "value": "unresolved; conditional source declaration"
+        },
+        {
+          "name": "sbom:evidence",
+          "value": "[{\"path\": \"CMakeLists.txt\", \"sha256\": \"dabfc170819993eafdda1fd8b9191989a6fae14449d2bbdbebb49553f4c8072d\"}]"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "vendored:third_party",
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "third_party",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"third_party/ed25519/LICENSE\", \"sha256\": \"f68d76b9c1c2271422e55134ea94cf71f2ac3fc3ed6a7ec6b83a1a0538753214\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"CMakeLists.txt\", \"sha256\": \"dabfc170819993eafdda1fd8b9191989a6fae14449d2bbdbebb49553f4c8072d\"}, {\"path\": \"third_party/ed25519/LICENSE\", \"sha256\": \"f68d76b9c1c2271422e55134ea94cf71f2ac3fc3ed6a7ec6b83a1a0538753214\"}, {\"path\": \"third_party/ed25519/VERSION.md\", \"sha256\": \"97300a5c9313dd594e41b89e3a234f7e0085f0c6199622d555b61637b1fe11b0\"}, {\"path\": \"third_party/ed25519/ed25519.h\", \"sha256\": \"8b09800605ac592c1f7d6e701f3526f84156db15bbd68904d39ad398e7d7c8ce\"}, {\"path\": \"third_party/ed25519/fe.c\", \"sha256\": \"71082937da43def6ecaf7811c23410bd8ea763969dfec67383f8129b12b1926d\"}, {\"path\": \"third_party/ed25519/fe.h\", \"sha256\": \"0476ae2ebb86978d1e0b9fbeb63dcddd7566d6b74806db47dda7688df74aaafb\"}, {\"path\": \"third_party/ed25519/fixedint.h\", \"sha256\": \"451fd529865e7fc69156f4cbe7c548857704ae4913768ad9ed7103656efdfc17\"}, {\"path\": \"third_party/ed25519/ge.c\", \"sha256\": \"c3bb834817edea83d843828a75af19867b93144d15140eadfd9784d40cf11409\"}, {\"path\": \"third_party/ed25519/ge.h\", \"sha256\": \"b16be2ea1731d9212933e7beeaef6882145fdcdaebdff9996efb5cf97faa2651\"}, {\"path\": \"third_party/ed25519/keypair.c\", \"sha256\": \"a9fd88cc4558f52d5fabf03b1b54c1c38a105a03753dd7ca4e0249687be0ebcc\"}, {\"path\": \"third_party/ed25519/precomp_data.h\", \"sha256\": \"c7d63a8b7ecd7bc6a3ac2b826a540a69dee0fc7e8bf3b00ef5dd98ce00a7c224\"}, {\"path\": \"third_party/ed25519/sc.c\", \"sha256\": \"c1bdb840416b34e79ceb7472d1a4ac4b1407c47b4c982cad981c72142ef42407\"}, {\"path\": \"third_party/ed25519/sc.h\", \"sha256\": \"b0ef537b4d4dad7bd2910e2a663a02a7ac25b473511a929c3c609d82f9bdf87d\"}, {\"path\": \"third_party/ed25519/seed.c\", \"sha256\": \"6a1191d9f680f548fdc9fa858f5069132931532b711f2be5d47c9c1471f22198\"}, {\"path\": \"third_party/ed25519/sha512.c\", \"sha256\": \"b34128b950036777c299943d624bd830a234a65932c394fdf455e4948258fb6d\"}, {\"path\": \"third_party/ed25519/sha512.h\", \"sha256\": \"647ed5784d4dcd682b9c42add2e39107582efb4df9e1362c8e5120613eb9a0ce\"}, {\"path\": \"third_party/ed25519/sign.c\", \"sha256\": \"af693a4a59430cc06d4b07f82e30bf266897ecc9c75265c7fa49cfa4159cf5ec\"}, {\"path\": \"third_party/ed25519/verify.c\", \"sha256\": \"a2ca7197c5f6d193c9f526d432429dfb44a65853a7ec18e10a5761334bdcf48c\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "unknown upstream origin"
+        }
+      ],
+      "type": "library"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "unknown",
+      "assemblies": [
+        "git:https://github.com/wave-owl/openALE@1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [],
+      "ref": "cmake:bb46a5a5cddad52cc5069d2b3a1b328eb49ffa3b178abf5e9e92f00e68f6089a"
+    },
+    {
+      "dependsOn": [],
+      "ref": "cmake:c09a73bf4eb0aef8ac767034bfef0cc31fefe72eae8141b911f7605f00aff54f"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:0"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:1"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:2"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:3"
+    },
+    {
+      "dependsOn": [],
+      "ref": "external-library:4"
+    },
+    {
+      "dependsOn": [
+        "cmake:bb46a5a5cddad52cc5069d2b3a1b328eb49ffa3b178abf5e9e92f00e68f6089a",
+        "cmake:c09a73bf4eb0aef8ac767034bfef0cc31fefe72eae8141b911f7605f00aff54f",
+        "external-library:0",
+        "external-library:1",
+        "external-library:2",
+        "external-library:3",
+        "external-library:4",
+        "vendored:third_party"
+      ],
+      "ref": "git:https://github.com/wave-owl/openALE@1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:third_party"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "git:https://github.com/wave-owl/openALE@1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/openALE/tree/1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/openALE",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "source-root"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "b4091aa5556c8c61b701a97d23bcd4ab828af772"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/openALE"
+        },
+        {
+          "name": "sbom:release-tags",
+          "value": "[]"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"eca2f4f48df66a3a763aec409b47602514349759665d4147f5e8bda7fbb79fc2\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:snapshot",
+          "value": "true"
+        },
+        {
+          "name": "sbom:snapshot-source-commit",
+          "value": "1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48"
+        },
+        {
+          "name": "sbom:snapshot-scope",
+          "value": "Initial immutable source snapshot, before the tooling commit; not a release report."
+        }
+      ],
+      "type": "application",
+      "version": "1f0fb89a4b3c9cd6b6cbb0a41e7ae8f817377b48"
+    },
+    "properties": [
+      {
+        "name": "sbom:scope",
+        "value": "Source repository inventory only; completeness is UNKNOWN. Syft inventories tracked source/package manifests. Gitlinks and declared vendored/model evidence are inspected at immutable pins. CMake declarations are conditional requirements, not resolved installations. This is NOT proof of operating-system packages, static-link closure, build-time resolution, or the contents of release binaries."
+      },
+      {
+        "name": "sbom:generation-status",
+        "value": "success"
+      },
+      {
+        "name": "sbom:generation-errors",
+        "value": "[]"
+      }
+    ],
+    "timestamp": "2026-11-02T16:50:42.640277+00:00",
+    "tools": {
+      "components": [
+        {
+          "author": "anchore",
+          "name": "syft",
+          "type": "application",
+          "version": "1.55.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:b57f61f9-9384-4b6c-8372-29c3dda7fb67",
+  "specVersion": "1.6",
+  "version": 1
+}
